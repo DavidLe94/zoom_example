@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/edtMeetingNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:hint="Meeting ID"
+        android:imeOptions="actionNext|flagNoExtractUi"
+        android:maxLength="13">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtVanityUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:hint="Vanity ID"
+        android:imeOptions="actionNext|flagNoExtractUi"
+        android:visibility="gone">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtMeetingPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:hint="Meeting Password(For join meeting only)"
+        android:imeOptions="actionNext|flagNoExtractUi">
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStartMeeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:onClick="onClickBtnStartMeeting"
+            android:text="Start this Meeting" />
+
+        <Button
+            android:id="@+id/btnJoinMeeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickBtnJoinMeeting"
+            android:text="Join this Meeting" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:onClick="onClickReturnMeeting"
+            android:text="Return Meeting" />
+
+        <Button
+            android:id="@+id/btnLoginUserStartInstant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="onClickBtnLoginUserStartInstant"
+            android:text="Start a Instant Meeting" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnPreMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickBtnPreMeeting"
+        android:text="Pre-Meeting Example"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:minWidth="150dp"
+        android:onClick="onClickSettings"
+        android:text="Setting"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickBtnLogout"
+        android:text="Logout" />
+
+</LinearLayout>
