@@ -28,7 +28,8 @@ import us.zoom.sdk.MeetingStatus;
 import us.zoom.sdk.ZoomSDK;
 import com.zoom.demo.R;
 
-public class APIUserStartJoinMeetingActivity extends Activity implements AuthConstants, MeetingServiceListener , View.OnClickListener{
+public class APIUserStartJoinMeetingActivity extends Activity
+		implements AuthConstants, MeetingServiceListener , View.OnClickListener{
 
 	private final static String TAG = "ZoomSDKExample";
 	

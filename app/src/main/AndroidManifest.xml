@@ -53,7 +53,7 @@
         </activity>
 
         <activity
-            android:name="ui.EmailUserLoginActivity"
+            android:name=".ui.EmailUserLoginActivity"
             android:icon="@drawable/ic_launcher"
             android:label="@string/this_app_name"
             android:theme="@style/ZMTheme.MainWindow">
