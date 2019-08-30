@@ -15,7 +15,8 @@ import us.zoom.sdk.ZoomApiError;
 import us.zoom.sdk.ZoomAuthenticationError;
 import com.zoom.demo.R;
 
-public class EmailUserLoginActivity extends Activity implements UserLoginCallback.ZoomDemoAuthenticationListener, View.OnClickListener {
+public class EmailUserLoginActivity extends Activity implements
+		UserLoginCallback.ZoomDemoAuthenticationListener, View.OnClickListener {
 
 	private final static String TAG = "ZoomSDKExample";
 	

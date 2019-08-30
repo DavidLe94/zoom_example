@@ -69,6 +69,7 @@ public class LoginUserStartJoinMeetingActivity extends Activity
         }else{
             mBtnCall.setText("Call Hau Le");
         }
+        ZoomSDK.getInstance().getMeetingSettingsHelper().setCustomizedMeetingUIEnabled(true);
     }
 
     private void registerListener() {
@@ -267,8 +268,7 @@ public class LoginUserStartJoinMeetingActivity extends Activity
     }
 
     @Override
-    public void onMeetingStatusChanged(MeetingStatus meetingStatus, int errorCode,
-                                       int internalErrorCode) {
+    public void onMeetingStatusChanged(MeetingStatus meetingStatus, int errorCode, int internalErrorCode) {
         Log.i(TAG, "onMeetingStatusChanged, meetingStatus=" + meetingStatus + ", errorCode=" + errorCode
                 + ", internalErrorCode=" + internalErrorCode);
 

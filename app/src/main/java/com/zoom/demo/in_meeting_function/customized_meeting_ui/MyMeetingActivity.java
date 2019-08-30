@@ -995,6 +995,5 @@ public class MyMeetingActivity extends FragmentActivity implements MeetingVideoC
         MeetingCommonCallback.getInstance().addListener(this);
 
     }
-
 }
 

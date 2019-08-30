@@ -21,7 +21,8 @@ import us.zoom.sdk.ZoomError;
 import us.zoom.sdk.ZoomSDK;
 import com.zoom.demo.R;
 
-public class InitAuthSDKActivity extends Activity implements InitAuthSDKCallback, UserLoginCallback.ZoomDemoAuthenticationListener, OnClickListener {
+public class InitAuthSDKActivity extends Activity
+        implements InitAuthSDKCallback, UserLoginCallback.ZoomDemoAuthenticationListener, OnClickListener {
 
     private final static String TAG = "ZoomSDKExample";
 
